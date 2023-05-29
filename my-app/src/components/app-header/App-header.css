@@ -1,0 +1,78 @@
+:root {
+    --main-color: #333; 
+    --accent-color: #6D9886; 
+    --btn-color: rgb(0, 190, 126); 
+  }
+
+
+@keyframes button {
+    20%{
+        background-color: rgb(0, 190, 9);
+    }
+    50%{
+        background-color: rgb(32, 190, 0);
+    }
+    50%{
+        background-color: rgb(0, 190, 101);
+    }
+    100%{
+        background-color: rgb(0, 190, 126);
+    }
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 750px;
+    margin-bottom: 50px;
+  }
+  
+  @media only screen and (max-width: 997px) {
+    .button-container {
+      gap: 400px;
+    }
+  }
+  @media (max-width: 761px) {
+    .button-container {
+      gap: 200px;
+    }
+  }
+
+  .add-task-button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 10px;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .task-filter {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+  
+  .task-filter option {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  
+  .task-filter-form {
+    width: 480px;
+  }
+
+  .task-filter:focus {
+    outline: none;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  }
+  

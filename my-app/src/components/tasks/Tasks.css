@@ -1,0 +1,43 @@
+:root {
+    --btn-color: rgb(0, 190, 126); 
+  }
+
+
+.checkBox{
+    width: 50px;
+    height: 30px;
+    background-color:var(--btn-color);
+    cursor: pointer;
+}
+.item{
+    gap: 600px;
+    display: flex;
+    align-items:center;
+    height: 100px;
+    width: 950px;
+}
+.container-icon{
+    display: flex;
+    gap: 30px;
+}
+.container-icon i{
+    cursor: pointer;
+}
+
+.list{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.title-input{
+    border:none;
+    font-size: 20px;
+}
+
+.pen-active {
+    color: #546178
+}
+.fa-trash:hover {
+    color: #546178
+}
+.active-input {
+    color:var(--btn-color);
+}

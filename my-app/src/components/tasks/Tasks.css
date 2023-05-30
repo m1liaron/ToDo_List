@@ -10,12 +10,46 @@
     cursor: pointer;
 }
 .item{
-    gap: 600px;
+    gap:100px;
     display: flex;
     align-items:center;
     height: 100px;
     width: 950px;
 }
+
+@media only screen and (max-width: 997px) {
+    .list{
+        width: 750px;
+    }
+    .item{
+        gap: 350px;
+        display: flex;
+        align-items:center;
+        height: 100px;
+        width: 950px;
+    }
+  }
+  li {
+    font-size: 25px;
+    width: auto;
+  }
+  
+  @media only screen and (max-width: 761px) {
+    .list{
+        width: 550px;
+    }
+    .item{
+        gap: 180px;
+        display: flex;
+        align-items:center;
+        height: 100px;
+        width: 950px;
+    }
+  }
+  li {
+    font-size: 25px;
+    width: auto;
+  }
 .container-icon{
     display: flex;
     gap: 30px;
@@ -30,6 +64,7 @@
 .title-input{
     border:none;
     font-size: 20px;
+    width: 750px;
 }
 
 .pen-active {
@@ -39,5 +74,11 @@
     color: #546178
 }
 .active-input {
-    color:var(--btn-color);
+    border:1px solid black;
+    border-radius:5px;
+    padding: 4px;
+}
+.time{
+    display: table;
+    font-size: 15px;
 }

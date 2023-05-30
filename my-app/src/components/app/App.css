@@ -11,8 +11,14 @@ main {
 }
 .container{
   margin: 0 auto;
-  display: table;
+    width: 200px;
+    display: table;
 }
-.loli li {
-  font-size: 25px;
+
+@media only screen and (max-width: 997px) {
+  .container{
+    margin: 0 auto;
+    display: table;
+    width: 200px;
+  }
 }

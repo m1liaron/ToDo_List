@@ -23,7 +23,9 @@ const Tasks = ({ item, onRemoveItem, startTime, filter, task}) => {
       }
     }
 
-    if ((filter === 'Incomplete' && complete) || (filter === 'Complete' && !complete)) {
+    if (
+      (filter === 'Incomplete' && complete) || 
+      (filter === 'Complete' && !complete)) {
       return null; // Don't render the item if filter is set to "Incomplete" and it's not complete, or if filter is set to "Complete" and it's not incomplete
     }
 
